@@ -1,9 +1,12 @@
 package com.goit.entities;
 
-import lombok.Data;
-import lombok.Builder;
+import lombok.*;
 
 @Data
+@Getter
+@Setter
+@ToString
+@AllArgsConstructor
 public class Note {
     private Long id;
     private String title;

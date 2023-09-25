@@ -70,7 +70,4 @@ public class NoteService implements NoteServiceInt {
         }
     }
 
-
-
-
 }
