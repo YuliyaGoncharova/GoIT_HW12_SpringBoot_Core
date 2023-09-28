@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 //import java.util.*;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.Random;
 
 @Service
@@ -55,9 +56,8 @@ public class NoteService implements NoteServiceInt {
         Якщо нотатки немає - викидає виключення.
      */
     @Override
-    public Note getById(long id) {
-
-        return noteRepository.findById(id).orElse(null);
+    public Optional<Note> getById(long id) {
+        return noteRepository.findById(id);
     }
 
 }

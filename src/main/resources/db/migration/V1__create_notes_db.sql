@@ -3,3 +3,4 @@ CREATE TABLE note (
     title VARCHAR(255) NOT NULL,
     content VARCHAR(1000)
 );
+
